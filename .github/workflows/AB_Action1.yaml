@@ -12,6 +12,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Find what directory you are in
+        run: 
+          cd
+          cd C:\Users\Administrator\GitHub_Training\First_Runner
+
       - name: Run Hello.bat
         run: |
           cd /GitHub_Training/First_Runner 
