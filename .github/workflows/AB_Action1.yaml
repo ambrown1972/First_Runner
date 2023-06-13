@@ -14,12 +14,11 @@ jobs:
 
       - name: Find what directory you are in
         run: 
+          # This variable will get the working repo
           ${{ github.repository }}
-          cd
-          cd C:\Users\Administrator\GitHub_Training\First_Runner
+
 
       - name: Run Hello.bat
-        run: |
-          cd /GitHub_Training/First_Runner 
+        run: 
           hello.bat
 
