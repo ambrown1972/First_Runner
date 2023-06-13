@@ -2,7 +2,7 @@ name: Checkout and Run Hello.bat
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
