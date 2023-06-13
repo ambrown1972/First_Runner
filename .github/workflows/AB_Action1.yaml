@@ -14,9 +14,10 @@ jobs:
 
       - name: Find what directory you are in
         run: 
+          dir
           # This variable will get the working repo
-          ${{ github.repository }}
-
+          cd ${{ github.repository }}
+          dir
 
       - name: Run Hello.bat
         run: 
