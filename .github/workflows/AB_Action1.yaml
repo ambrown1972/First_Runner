@@ -16,7 +16,9 @@ jobs:
         run: 
           dir
           # This variable will get the working repo
-          ${{ github.repository }}
+          - name: Print repository
+          run: echo "Repository: ${{ github.repository }}"
+
           dir
 
       - name: Run Hello.bat
