@@ -2,7 +2,8 @@ name: Checkout and Run Hello.bat
 on:
   push:
     branches:
-      - main
+      - master
+  workflow_dispatch:
 
 jobs:
   build:
