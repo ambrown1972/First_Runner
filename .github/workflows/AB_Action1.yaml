@@ -19,4 +19,4 @@ jobs:
 
       - name: Run Hello.bat
         run: 
-          hello.bat
+          cmd /c hello.bat
