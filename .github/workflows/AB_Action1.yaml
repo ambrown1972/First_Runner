@@ -15,10 +15,4 @@ jobs:
 
       - name: FInd what directory you are in
         run: 
-          dir
-          Repository: ${{ github.repository }}"
-          dir
-
-      - name: Run Hello.bat
-        run: |
-          hello.bat
+          echo "Repository: ${{ github.repository }}"
