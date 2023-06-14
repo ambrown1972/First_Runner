@@ -2,7 +2,7 @@ name: Checkout and Run Hello.bat
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -12,16 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Find what directory you are in
-        run: 
-          dir
-          # This variable will get the working repo
-          - name: Print repository
-          run: echo "Repository: ${{ github.repository }}"
-
-          dir
-
       - name: Run Hello.bat
-        run: 
+        run: |
+          echo "Current Path" cd
           hello.bat
-
