@@ -13,6 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: FInd what directory you are in
+      - name: Fnd what directory you are in
         run: 
           echo "Repository: ${{ github.repository }}"
+          
