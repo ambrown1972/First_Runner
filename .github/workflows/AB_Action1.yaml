@@ -16,3 +16,7 @@ jobs:
 
       - name: Find what directory you are in
         run: echo "Repository ${{ github.repository }}"
+
+      - name: Run Hello.bat
+        run: 
+          hello.bat
