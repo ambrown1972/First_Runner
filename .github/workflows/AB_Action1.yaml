@@ -13,7 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: FInd what directory you are in
+        run: 
+          dir
+          Repository: ${{ github.repository }}"
+          dir
+
       - name: Run Hello.bat
         run: |
-          echo "Current Path" cd
           hello.bat
